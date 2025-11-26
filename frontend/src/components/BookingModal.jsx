@@ -47,8 +47,8 @@ const BookingModal = ({ isOpen, onClose, bookingData }) => {
       <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-ocean-600 text-white p-6 rounded-t-2xl flex justify-between items-center">
           <div>
-            <h2 className="text-2xl font-bold">Book Your Experience</h2>
-            <p className="text-white">
+            <h2 className="text-2xl font-bold text-black">Book Your Experience</h2>
+            <p className="text-black">
               {bookingData?.type === 'package' ? bookingData.item.name : bookingData?.item.name}
             </p>
           </div>
@@ -241,7 +241,7 @@ const BookingModal = ({ isOpen, onClose, bookingData }) => {
               </button>
               <button
                 type="submit"
-                className="flex-1 px-6 py-3 bg-ocean-600 text-white rounded-lg font-semibold hover:bg-ocean-700 transition duration-300"
+                className="flex-1 px-6 py-3 border border-gray-300 rounded-lg font-semibold text-gray-700 hover:bg-gray-50 transition duration-300"
               >
                 Confirm Booking
               </button>
